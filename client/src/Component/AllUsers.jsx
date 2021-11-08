@@ -65,7 +65,6 @@ const AllStudents = () => {
         {students.map((student) => (
           <TableRow className={classes.row} key={student.id}>
             <TableCell>{student._id}</TableCell>{" "}
-            {/* change it to student.id to use JSON Server */}
             <TableCell>{student.name}</TableCell>
             <TableCell>{student.username}</TableCell>
             <TableCell>{student.email}</TableCell>
