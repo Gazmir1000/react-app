@@ -11,11 +11,9 @@ function App() {
     <BrowserRouter>
       <NavBar />
       <Switch>
-       
         <Route exact path="/all" component={AllUsers} />
         <Route exact path="/add" component={AddUser} />
         <Route exact path="/edit/:id" component={EditUser} />
-        
       </Switch>
     </BrowserRouter>
   );

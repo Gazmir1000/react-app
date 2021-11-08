@@ -110,4 +110,4 @@ const EditStudent = () => {
   );
 };
 
-export default <EditStudent></EditStudent>;
+export default EditStudent;

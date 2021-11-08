@@ -1,6 +1,4 @@
 import express from 'express';
-import bodyParser from 'body-parser';
-
 import mongoose from 'mongoose';
 import cors from 'cors';
 
@@ -8,10 +6,9 @@ import Routes from './route/route.js';
 
 const app = express(); 
 
-app.use(bodyParser.json({extended: true }));
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.json())
 app.use(cors());
-// Step 2 ------------------->
+
 app.use('/students', Routes);
 
 
@@ -20,7 +17,7 @@ const URL = 'mongodb+srv://Gazi:gazi0123@cluster0.mxvfy.mongodb.net/studentDatab
 const PORT = process.env.PORT || '8080';
 
 
-mongoose.connect(URL, { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false }).then(() => { 
+mongoose.connect(URL, { useNewUrlParser: true  }).then(() => { 
     
     app.listen(PORT, () => console.log(`Server is running on PORT: ${PORT}`))
 }).catch((error) => {

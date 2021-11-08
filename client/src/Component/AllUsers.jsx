@@ -80,7 +80,6 @@ const AllStudents = () => {
               >
                 Edit
               </Button>{" "}
-              {/* change it to user.id to use JSON Server */}
               <Button
                 color="secondary"
                 variant="contained"
@@ -88,7 +87,6 @@ const AllStudents = () => {
               >
                 Delete
               </Button>{" "}
-              {/* change it to user.id to use JSON Server */}
             </TableCell>
           </TableRow>
         ))}

@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-// const usersUrl = 'http://localhost:3003/users';
+
 const studentsUrl = 'http://localhost:8080/students';
 
 export const getStudents = async (id) => {
