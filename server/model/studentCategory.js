@@ -3,15 +3,12 @@ import autoIncrement from 'mongoose-auto-increment';
 
 
 const categorySchema = mongoose.Schema({
-    name: String,
-    username: String,
-    email: String,
-    phone: Number
+    year:{type:String,required:true}
 });
 
 autoIncrement.initialize(mongoose.connection);
-studentSchema.plugin(autoIncrement.plugin, 'student');
+categorySchema.plugin(autoIncrement.plugin, 'category');
 
-const postStudent = mongoose.model('student', studentSchema);
+const postCategory = mongoose.model('category', categorySchema);
 
-export default postStudent;
+export default postCategory;

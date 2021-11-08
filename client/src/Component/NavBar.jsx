@@ -24,6 +24,9 @@ const NavBar = () => {
         <NavLink className={classes.tabs} to="add" exact>
           Add Students
         </NavLink>
+        <NavLink className={classes.tabs} to="add/category" exact>
+          Add Category
+        </NavLink>
       </Toolbar>
     </AppBar>
   );
